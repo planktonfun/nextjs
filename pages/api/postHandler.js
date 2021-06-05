@@ -26,10 +26,10 @@ async function handler(req, res) {
   if (req.method === 'POST') {
     // Process a POST request
     res.json({ type: 1 });
+  } else {
+    // Rest of the API logic
+    res.json({ message: 'Hello Everyone!' })
   }
-
-  // Rest of the API logic
-  res.json({ message: 'Hello Everyone!' })
 }
 
 export default handler
